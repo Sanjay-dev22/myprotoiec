@@ -1,0 +1,3 @@
+[
+  { "startTime": "2024-04-15T19:00:00Z", "kWh": 60, "note": "inside the INR_PER_KWH surcharge window; base charge should equal 60 kWh across slabs 0-60" }
+]

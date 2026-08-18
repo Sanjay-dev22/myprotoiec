@@ -1,0 +1,8 @@
+# Never commit the private signing key, even though this is just a local
+# test identity (did:web:ies.merc.example) with no real-world authority.
+# Regenerate it locally with `npm run keygen` -- keys/public.pem and
+# keys/did.json (the public half) are safe and are committed.
+keys/private.pem
+
+node_modules/
+*.log

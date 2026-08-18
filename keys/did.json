@@ -1,0 +1,20 @@
+{
+  "@context": "https://www.w3.org/ns/did/v1",
+  "id": "did:web:ies.merc.example",
+  "verificationMethod": [
+    {
+      "id": "did:web:ies.merc.example#key-1",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:ies.merc.example",
+      "publicKeyJwk": {
+        "crv": "Ed25519",
+        "x": "eVLu9EzQskQl6T3HC7pMks0xPp5_2FGnhbb4j9i0cZs",
+        "kty": "OKP",
+        "kid": "key-1"
+      }
+    }
+  ],
+  "assertionMethod": [
+    "did:web:ies.merc.example#key-1"
+  ]
+}

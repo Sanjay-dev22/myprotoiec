@@ -1,0 +1,5 @@
+[
+  { "startTime": "2024-04-15T10:00:00Z", "kWh": 250, "note": "daytime, outside any surcharge window" },
+  { "startTime": "2024-04-15T19:00:00Z", "kWh": 60, "note": "inside evening-peak window 18:00-22:00" },
+  { "startTime": "2024-04-15T01:00:00Z", "kWh": 40, "note": "inside night-offpeak window 23:00-05:00, which WRAPS past midnight" }
+]

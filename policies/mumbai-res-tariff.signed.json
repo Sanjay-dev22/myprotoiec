@@ -1,0 +1,75 @@
+{
+  "policy": {
+    "@context": "https://raw.githubusercontent.com/beckn/DEG/ies-specs/specification/external/schema/ies/core/context.jsonld",
+    "@type": "IES_Policy",
+    "id": "policy-mumbai-res-001",
+    "objectType": "POLICY",
+    "createdDateTime": "2024-04-10T11:00:00Z",
+    "modificationDateTime": "2026-08-18T02:10:28.940Z",
+    "programID": "program-merashehar-001",
+    "policyID": "MUM-RES-T1",
+    "policyName": "Mumbai Residential Telescopic 2024",
+    "policyType": "TARIFF",
+    "samplingInterval": "R/2024-04-10T00:00:00Z/P1M",
+    "energySlabs": [
+      {
+        "id": "slab-0-100",
+        "@type": "EnergySlab",
+        "start": 0,
+        "end": 100,
+        "price": 4.5
+      },
+      {
+        "id": "slab-101-300",
+        "@type": "EnergySlab",
+        "start": 101,
+        "end": 300,
+        "price": 7.2
+      },
+      {
+        "id": "slab-301-plus",
+        "@type": "EnergySlab",
+        "start": 301,
+        "end": null,
+        "price": 9.8
+      }
+    ],
+    "surchargeTariffs": [
+      {
+        "id": "surcharge-evening-peak",
+        "@type": "SurchargeTariff",
+        "recurrence": "P1D",
+        "interval": {
+          "start": "T18:00:00Z",
+          "duration": "PT4H"
+        },
+        "value": 20,
+        "unit": "PERCENT"
+      },
+      {
+        "id": "discount-night-offpeak",
+        "@type": "SurchargeTariff",
+        "recurrence": "P1D",
+        "interval": {
+          "start": "T23:00:00Z",
+          "duration": "PT6H"
+        },
+        "value": -10,
+        "unit": "PERCENT"
+      }
+    ]
+  },
+  "publication": {
+    "issuer": "did:web:ies.merc.example",
+    "issuedAt": "2026-08-18T02:10:28.940Z",
+    "replaces": null,
+    "currency": "INR",
+    "proof": {
+      "type": "Ed25519Signature2020",
+      "verificationMethod": "did:web:ies.merc.example#key-1",
+      "created": "2026-08-18T02:10:28.940Z",
+      "proofPurpose": "assertionMethod",
+      "signatureValue": "dt1m5Cpv6Yx/l5JvbApPbpKBWLECVluRfWuf3NCpBNDrNcdmcpnaP/PjhWjh8zbld+QpxFsm6RCGVM1gi2TzAg=="
+    }
+  }
+}
