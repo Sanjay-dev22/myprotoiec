@@ -13,6 +13,11 @@ bills. That is the exact claim the IES v0.4 Strategy Document makes about this
 use case (§ A1.6): *"Multiple billing systems running the same Policy Pack
 produce identical results."*
 
+**Want to run this yourself?** See **[`GUIDE.md`](GUIDE.md)** for a
+complete, from-scratch setup walkthrough — clone to first successful run in
+about 10 minutes, PowerShell-first with a Bash alternative, no prior context
+needed.
+
 ## What's real vs. simulated here
 
 | Piece | Status |
